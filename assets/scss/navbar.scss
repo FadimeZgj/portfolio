@@ -1,29 +1,57 @@
+/* Assuming you have defined $primary-color, $secondary-color, and other necessary variables in 'variables.scss' */
+
 @import 'variables';
 
-/* Votre code CSS pour la classe .navbar reste inchangé */
+/* Votre code SCSS pour la classe .navbar reste inchangé */
 .navbar {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 1em 5em 1em 5em;
-}
 
-/* Nouveau conteneur interne avec espace entre les éléments */
-.navbar__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; /* Assurez-vous que le conteneur occupe toute la largeur */
-}
+    /* Nouveau conteneur interne avec espace entre les éléments */
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        /* Assurez-vous que le conteneur occupe toute la largeur */
 
-.navbar__logo {
-    width: 8em;
-}
+        .navbar__logo {
+            width: 8em;
+        }
 
-.navbar__link {
-    text-decoration: none;
-    color: $secondary-color;
-    margin: 0 1em 0 1em;
-    font-size: 1.3em;
+        .navbar__link {
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 1.3em;
+            position: relative; /* Ensure the pseudo-element is positioned relative to the link */
+
+            /* Create the pseudo-element for the underline */
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0; /* Start with 0 width */
+                height: 2px;
+                background-color: $fourth-color;
+                transition: width 200ms ease-in; /* Control the underline's speed */
+            }
+
+            &:hover::before {
+                /* On hover, expand the underline to the full width */
+                width: 100%;
+            }
+        }
+        
+        ul {
+            display: flex;
+            gap: 3em;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+    }
 }

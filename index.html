@@ -12,11 +12,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>Fadime Ilhan</title>
 </head>
 
 <body>
@@ -27,25 +28,37 @@
                     <img class="navbar__logo" src="assets/images/logo-dark.jpg" alt="">
                 </div>
                 <div>
-                    <a href="" class="navbar__link">Accueil</a>
-                    <a href="" class="navbar__link">Profil</a>
-                    <a href="" class="navbar__link">Compétences</a>
-                    <a href="" class="navbar__link">Projets</a>
-                    <a href="" class="navbar__link">Contact</a>
+                    <ul>
+                        <li><a href="#" class="navbar__link">Accueil</a></li>
+                        <li><a href="#profil" class="navbar__link">Profil</a></li>
+                        <li><a href="#competences" class="navbar__link">Compétences</a></li>
+                        <li><a href="#projects" class="navbar__link">Projets</a></li>
+                        <li><a href="#contact" class="navbar__link">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-    
+
 
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <img src="assets/images/photo-ecran2.jpg" alt="" class="home__image">
             <h1 class="home__title--name">Fadime ILHAN</h1>
             <h2 class="home__title--job">Développeuse Web / Web Mobile</h2>
+
+            <div class="arrow-container" id="scrollArrow">
+                <div class="arrow">
+                    <svg class="arrow__icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+                    </svg>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <section class="profil" id="profil">
             <h3>À propos de moi</h3>
             <p>
                 Bonjour, je m'appelle Fadime ILHAN et je suis une développeuse Web junior.
@@ -62,7 +75,7 @@
             <button>CV</button>
         </section>
 
-        <section>
+        <section id="competences">
             <h3>Compétences</h3>
 
             <div>
@@ -80,7 +93,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="projects">
             <h3>Mes Projets</h3>
 
             <p>Voici quelques réalisations effectuées durant ma formation, durant mon stage et mes projets personnelles.
@@ -89,7 +102,7 @@
             <div>...</div>
         </section>
 
-        <section>
+        <section id="contact">
             <h3>Contact</h3>
 
             <form action="">
@@ -122,6 +135,7 @@
             - Tous droits réservés
         </p>
     </footer>
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>
