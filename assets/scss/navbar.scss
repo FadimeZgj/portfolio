@@ -1,0 +1,29 @@
+@import 'variables';
+
+/* Votre code CSS pour la classe .navbar reste inchangé */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 5em 1em 5em;
+}
+
+/* Nouveau conteneur interne avec espace entre les éléments */
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Assurez-vous que le conteneur occupe toute la largeur */
+}
+
+.navbar__logo {
+    width: 8em;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: $secondary-color;
+    margin: 0 1em 0 1em;
+    font-size: 1.3em;
+}

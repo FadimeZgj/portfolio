@@ -12,26 +12,37 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Profil</a></li>
-                <li><a href="">Compétences</a></li>
-                <li><a href="">Projets</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+            <div class="navbar__container">
+                <div>
+                    <img class="navbar__logo" src="assets/images/logo-dark.jpg" alt="">
+                </div>
+                <div>
+                    <a href="" class="navbar__link">Accueil</a>
+                    <a href="" class="navbar__link">Profil</a>
+                    <a href="" class="navbar__link">Compétences</a>
+                    <a href="" class="navbar__link">Projets</a>
+                    <a href="" class="navbar__link">Contact</a>
+                </div>
+            </div>
         </nav>
     </header>
+    
 
     <main>
-        <section>
-            <h1>Fadime ILHAN</h1>
-            <h2>Développeuse Web / Web Mobile</h2>
+        <section class="home">
+            <img src="assets/images/photo-ecran2.jpg" alt="" class="home__image">
+            <h1 class="home__title--name">Fadime ILHAN</h1>
+            <h2 class="home__title--job">Développeuse Web / Web Mobile</h2>
         </section>
 
         <section>
