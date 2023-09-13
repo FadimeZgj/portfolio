@@ -1,0 +1,6 @@
+@import 'variables';
+
+.competences_title {
+    @include title-style;
+    text-align: center;
+}

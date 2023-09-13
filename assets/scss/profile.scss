@@ -1,23 +1,19 @@
 @import 'variables';
 
-.profil {
-    text-align: justify; 
+.profil { 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .profil_title {
-        margin-bottom: 2em;
-        margin-top: 3em;
-        font-size: 3em;
-        color: $third-color;
+        @include title-style;
     }
 
     .describe {
         display: flex;
         justify-content: space-around;
         align-items: center ;
-        width: 40%;
+        width: 50em;
         border: 3px solid $fourth-color;
         padding: 2em;
 

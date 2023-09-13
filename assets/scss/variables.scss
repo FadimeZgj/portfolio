@@ -8,3 +8,10 @@ $fifth-color: #D62828;
     font-family: 'Source Code Pro', monospace;
     color: #E2E2E2;
 }
+
+@mixin title-style {
+    margin-bottom: 2em;
+        margin-top: 3em;
+        font-size: 3em;
+        color: $third-color;
+}
