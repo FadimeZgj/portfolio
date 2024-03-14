@@ -6,4 +6,9 @@
   text-align: center;
 }
 
+.competences_technos {
+  display: flex;
+  flex-direction: row;
+}
+
 /*# sourceMappingURL=competences.css.map */
