@@ -1,0 +1,6 @@
+@import 'variables';
+
+.projects__title {
+    @include title-style;
+    text-align: center;
+}

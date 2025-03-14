@@ -25,6 +25,9 @@
   margin-right: 3em;
   border: 5px solid #88498F;
 }
+.profil .describe .describe_text strong {
+  font-weight: normal;
+}
 .profil a.profil_btn {
   display: inline-block;
   background-color: #086788;
@@ -35,9 +38,11 @@
   margin-top: 2em;
   font-size: 1.5em;
   font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .profil a.profil_btn:hover {
   background-color: #88498F;
+  transform: scale(1.1);
 }
 .profil a.profil_btn:active {
   animation: pulse 1s infinite;

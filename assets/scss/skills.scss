@@ -1,0 +1,25 @@
+@import 'variables';
+
+.skills__title {
+    @include title-style;
+    text-align: center;
+}
+
+.skills__technos{
+    display: flex;
+    flex-direction: column;
+
+    .skills__technos--list {
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem 0;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+}

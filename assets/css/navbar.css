@@ -5,7 +5,16 @@
   position: fixed;
   width: 100%;
   padding: 1em 5em 1em 5em;
+  position: fixed;
+  width: 100%;
+  padding: 1em 5em;
+  background: transparent;
+  transition: background 0.3s ease-in-out;
   /* Nouveau conteneur interne avec espace entre les éléments */
+}
+.navbar.scrolled {
+  background: #08020f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .navbar__container {
   display: flex;

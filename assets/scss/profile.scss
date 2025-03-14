@@ -26,6 +26,12 @@
         }
 
         animation: border-animation 2s ease-in-out infinite;
+
+        .describe_text{
+          strong{
+            font-weight: normal;
+          }
+        }
     }
 
     a.profil_btn {
@@ -38,9 +44,11 @@
         margin-top: 2em;
         font-size: 1.5em;
         font-weight: 600;
+        transition: background-color 0.3s ease, transform 0.2s ease;
       
         &:hover {
           background-color: $fourth-color;
+          transform: scale(1.1);
         }
       
         &:active {

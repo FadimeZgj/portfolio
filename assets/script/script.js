@@ -5,14 +5,14 @@ const jobElement = document.querySelector('.home__title--job');
 
 // Function to create typing effect
 function typeEffect(element, text, speed) {
-    const textArray = text.split('');
-    let tempText = '';
-    textArray.forEach((char, index) => {
-        setTimeout(() => {
-            tempText += char;
-            element.textContent = tempText;
-        }, speed * index);
-    });
+  const textArray = text.split('');
+  let tempText = '';
+  textArray.forEach((char, index) => {
+    setTimeout(() => {
+      tempText += char;
+      element.textContent = tempText;
+    }, speed * index);
+  });
 }
 
 // Call the typing function for name and job titles
@@ -29,14 +29,25 @@ setTimeout(() => typeEffect(jobElement, jobText, 100), nameText.length * 100 + 3
 
 /* SCROLL ARROW */
 
-document.addEventListener("DOMContentLoaded", function() {
-    const scrollArrow = document.querySelector("#scrollArrow");
-    const nextSection = document.querySelector(".profil");
-  
-    scrollArrow.addEventListener("click", function() {
-      nextSection.scrollIntoView({ behavior: "smooth" });
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollArrow = document.querySelector("#scrollArrow");
+  const nextSection = document.querySelector(".profil");
+
+  scrollArrow.addEventListener("click", function () {
+    nextSection.scrollIntoView({ behavior: "smooth" });
   });
-  
+});
+
 //////////////////////////////////////////////////////////////
 
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".navbar");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) { // Changer la valeur si nécessaire
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+});
