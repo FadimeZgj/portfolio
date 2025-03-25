@@ -1,0 +1,17 @@
+$primary-color: #08020f;
+$secondary-color: #E2E2E2;
+$third-color: #086788;
+$fourth-color: #88498F;
+$fifth-color: #D62828;
+
+@mixin primary-font {
+    font-family: 'Source Code Pro', monospace;
+    color: #E2E2E2;
+}
+
+@mixin title-style {
+    margin-bottom: 2em;
+        margin-top: 3em;
+        font-size: 3em;
+        color: $third-color;
+}

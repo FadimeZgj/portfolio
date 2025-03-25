@@ -1,0 +1,83 @@
+@import 'variables';
+
+.profil { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .profil_title {
+        @include title-style;
+    }
+
+    .describe {
+        display: flex;
+        justify-content: space-around;
+        align-items: center ;
+        width: 50em;
+        border: 3px solid $fourth-color;
+        padding: 2em;
+
+        .describe_photo{
+            display: block;
+            width: 15rem;
+            border-radius: 50%;
+            margin-right: 3em;
+            border: 5px solid $fourth-color;
+        }
+
+        animation: border-animation 2s ease-in-out infinite;
+
+        .describe_text{
+          strong{
+            font-weight: normal;
+          }
+        }
+    }
+
+    a.profil_btn {
+        display: inline-block;
+        background-color: $third-color;
+        color: $secondary-color;
+        padding: 10px 20px;
+        text-decoration: none;
+        cursor: pointer;
+        margin-top: 2em;
+        font-size: 1.5em;
+        font-weight: 600;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      
+        &:hover {
+          background-color: $fourth-color;
+          transform: scale(1.1);
+        }
+      
+        &:active {
+          animation: pulse 1s infinite;
+        }
+      }
+      
+}
+
+@keyframes border-animation {
+  0% {
+    border-color: $fourth-color;
+  }
+  50% {
+    border-color: $third-color;
+  }
+  100% {
+    border-color: $fourth-color;
+  }
+}
+
+@keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
