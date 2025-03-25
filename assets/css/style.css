@@ -1,0 +1,19 @@
+html, body {
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #08020f;
+  font-family: "Source Code Pro", monospace;
+  color: #E2E2E2;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
