@@ -1,9 +1,90 @@
-.projects__title {
+@charset "UTF-8";
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projects .projects__title {
   margin-bottom: 2em;
   margin-top: 3em;
   font-size: 3em;
   color: #086788;
   text-align: center;
+}
+.projects .projects__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.projects .projects__list .projects__list--card {
+  width: calc(33.3333333333% - 5rem);
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 15px;
+  border-bottom: 2px solid #086788;
+  padding-bottom: 2rem;
+}
+.projects .projects__list .projects__list--card img {
+  width: 100%;
+  max-height: 17rem;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.projects .projects__list .projects__list--card h4 {
+  color: #88498F;
+  font-size: 1.5rem;
+}
+.projects .projects__list .projects__list--card h5 {
+  color: #086788;
+  font-size: 1rem;
+}
+.projects .projects__list .projects__list--card ul {
+  list-style: none;
+  /* Supprime les puces par défaut */
+  padding-left: 0;
+}
+.projects .projects__list .projects__list--card ul li {
+  position: relative;
+  padding-left: 2rem;
+  /* Espace pour le chevron */
+  margin: 1rem 0;
+}
+.projects .projects__list .projects__list--card ul li::before {
+  content: "chevron_right";
+  /* Nom de l'icône Material Icons */
+  font-family: "Material Icons";
+  /* Utilise la police Google Fonts */
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  color: #086788;
+  /* Change la couleur */
+}
+.projects .projects__list .projects__list--card ul li span {
+  font-weight: bold;
+  color: #086788;
+}
+.projects .projects__list .projects__list--card .project__list--card-link {
+  width: 100%;
+  display: flex;
+}
+.projects .projects__list .projects__list--card .project__list--card-link a {
+  width: 100%;
+  color: #E2E2E2;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .projects__list .projects__list--card .project__list--card-link a:hover {
+  opacity: 0.5;
+}
+.projects .projects__list .projects__list--card .project__list--card-link a img {
+  width: 50px;
 }
 
 /*# sourceMappingURL=projects.css.map */

@@ -1,21 +1,24 @@
-.skills__title {
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+.skills .skills__title {
   margin-bottom: 2em;
   margin-top: 3em;
   font-size: 3em;
   color: #086788;
   text-align: center;
 }
-
-.skills__technos {
+.skills .skills__technos {
   display: flex;
   flex-direction: column;
 }
-.skills__technos .skills__technos--list {
+.skills .skills__technos .skills__technos--list {
   display: flex;
   justify-content: space-around;
   margin: 3rem 0;
 }
-.skills__technos .skills__technos--list div {
+.skills .skills__technos .skills__technos--list div {
   display: flex;
   flex-direction: column;
   justify-content: center;

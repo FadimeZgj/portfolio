@@ -13,6 +13,8 @@
     padding: 1em 5em;
     background: transparent; // Transparent par défaut
     transition: background 0.3s ease-in-out; // Transition fluide
+    z-index: 1000; // Priorité au-dessus des autres éléments
+
 
     &.scrolled {
         background: $primary-color; // Change la couleur de fond au scroll

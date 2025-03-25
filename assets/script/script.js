@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.querySelector(".navbar");
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) { // Changer la valeur si nécessaire
+    // Si la position de défilement est au-delà de 100px ou si on est tout en bas de la page
+    if (window.scrollY > 100 || window.innerHeight + window.scrollY >= document.documentElement.scrollHeight) {
       navbar.classList.add("scrolled");
     } else {
       navbar.classList.remove("scrolled");

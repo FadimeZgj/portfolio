@@ -1,0 +1,15 @@
+@import 'variables';
+
+.footer {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    &__contact {
+        a:hover {
+            opacity: 0.5;
+        }
+    }
+}

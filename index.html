@@ -10,12 +10,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/navbar.css">
     <link rel="stylesheet" href="/assets/css/home.css">
     <link rel="stylesheet" href="/assets/css/profile.css">
     <link rel="stylesheet" href="/assets/css/skills.css">
     <link rel="stylesheet" href="/assets/css/projects.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -36,7 +38,6 @@
                         <li><a href="#profil" class="navbar__link">Profil</a></li>
                         <li><a href="#skills" class="navbar__link">Compétences</a></li>
                         <li><a href="#projects" class="navbar__link">Projets</a></li>
-                        <li><a href="#contact" class="navbar__link">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,6 +50,12 @@
             <img src="assets/images/photo-ecran2.jpg" alt="" class="home__image">
             <h1 class="home__title--name">Fadime ILHAN</h1>
             <h2 class="home__title--job">Développeuse Web / Web Mobile / Fullstack</h2>
+
+            <div class="home__contact">
+                <a href="mailto:fadime.ilhan5703@gmail.com"><img src="./assets/images/email.png" alt="Logo email"> Contact</a>
+                <a href="https://www.linkedin.com/in/fadime-ilhan/" target="_blank"><img src="./assets/images/linkedin.png" alt="Logo LinkedIn"> LinkedIn</a>
+                <a href="https://github.com/FadimeZgj" target="_blank"><img src="./assets/images/github.png" alt="Logo github"> GitHub</a>
+            </div>
 
             <div class="arrow-container" id="scrollArrow">
                 <div class="arrow">
@@ -64,7 +71,7 @@
         <section class="profil" id="profil">
             <h3 class="profil_title">À propos de moi</h3>
             <div class="describe">
-                <img class="describe_photo" src="assets/images/photo-profil.jpg" alt="" srcset="">
+                <img class="describe_photo" src="assets/images/photo-profil.jpg" alt="Photo de Fadime Ilhan">
                 <p class="describe_text">
                     Bonjour,
                     <br>
@@ -86,7 +93,7 @@
             <a href="assets/images/cv_Fadime_Ilhan.pdf" target="_blank" class="profil_btn">Mon CV</a>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="skills">
             <h3 class="skills__title">Compétences</h3>
 
             <div class="skills__technos">
@@ -145,49 +152,93 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="projects">
             <h3 class="projects__title">Mes Projets</h3>
 
-            <p>Voici quelques réalisations effectuées durant ma formation, durant mon stage et mes projets personnelles.
-            </p>
-
-            <div>
-                Alert MNS
+            <div class="projects__list">
+                <div class="projects__list--card">
+                    <img src="./assets/images/alertMNS/AlertMNS-login.png" alt="Page d'accueil Alert MNS">
+                    <h4>Alert MNS</h4>
+                    <h5>Application de mesagerie</h5>
+                    <div>
+                        <p>
+                            Projet fil rouge de la formation Développeur Web 2022-2023
+                            Développement d'une application de messagerie d'entreprise.
+                        </p>
+                        <br>
+                        <p>Technologies et outils utilisés :</p>
+                        <ul>
+                            <li><span>Développement Front-end :</span> Utilisation de HTML, CSS et JavaScript</li>
+                            <li><span>Développement Back-end :</span> Utilisation de PHP et SQL avec des mesures de
+                                sécurité contre les failles XSS et les injections SQL</li>
+                            <li><span>Bases de données :</span> Modélisation avec JMerise (MCD), MySQL</li>
+                            <li><span>Interaction Front/Back :</span> Communication via des requêtes fetch en JSON</li>
+                            <li><span>Hébergement et administration serveur :</span> Déploiement sur OVH avec
+                                configuration NGINX</li>
+                            <li><span>Organisation et suivi de projet :</span> Méthodologie agile avec Trello</li>
+                            <li><span>UI/UX et design :</span> Création de maquettes sur Canva, élaboration d'une charte
+                                graphique et adaptation responsive</li>
+                            <li><span>Gestion du code source :</span> Versioning avec Git</li>
+                        </ul>
+                    </div>
+                    <div class="project__list--card-link">
+                        <!-- <a href=""><img src="./assets/images/icon-page.png" alt=""></a> -->
+                        <a href="https://github.com/FadimeZgj/AlertMNS/tree/main" target="_blank"><img src="./assets/images/icon-github.png" alt="Accès au repository GitHub"></a>
+                    </div>
+                </div>
+                <div class="projects__list--card">
+                    <img src="./assets/images/infinite-quiz/infinite-quiz-jeu.png" alt="Page de jeu Infinite quiz">
+                    <h4>Infinite Quiz</h4>
+                    <h5>Application de Quiz</h5>
+                    <div>
+                        <p>
+                            Projet fil rouge de la formation Bachelor Développeur Fullstack 2023-2024
+                        </p>
+                        <br>
+                        <p>L’objectif principal est de développer un outil de gamification permettant d’évaluer les
+                            connaissances et compétences des collaborateurs, tout en facilitant l’intégration
+                            d’Icebreakers lors de réunions ou séminaires. L’application est conçue en mode SaaS.</p>
+                        <br>
+                        <p>Technologies et outils utilisés :</p>
+                        <ul>
+                            <li><span>Développement Front-end :</span> Angular</li>
+                            <li><span>Développement Back-end :</span> Symfony, Api Platform</li>
+                            <li><span>Bases de données :</span> Modélisation avec JMerise (MCD), MySQL</li>
+                            <li><span>Interaction Front/Back :</span> Communication via l'API avec des requêtes FETCH
+                            </li>
+                            <li><span>Intégration continue (CI/CD) :</span> Mise en place de l'intégration continue avec
+                                GitHub Actions</li>
+                            <li><span>Tests :</span> Réalisation de tests unitaires et fonctionnels pour assurer la
+                                qualité du code</li>
+                            <li><span>Gestion de projet :</span> Modélisation UML, gestion des risques, planification
+                                des tâches avec GANTT, et méthodologie agile pour le suivi de l'avancement Kanban avec
+                                Trello</li>
+                            <li><span>UI/UX et design :</span> Création de maquettes sur Figma, élaboration d'une charte
+                                graphique et adaptation responsive</li>
+                            <li><span>Gestion du code source :</span> Versioning avec Git</li>
+                        </ul>
+                    </div>
+                    <div class="project__list--card-link">
+                        <!-- <a href=""><img src="./assets/images/icon-page.png" alt="Accès à la page du projet"></a> -->
+                        <a href="https://github.com/FadimeZgj/infinite_quiz/tree/dev" target="_blank"><img src="./assets/images/icon-github.png" alt="Accès au repository Github">Front-end</a>
+                        <a href="https://github.com/FadimeZgj/infinite_quiz_api/tree/dev" target="_blank"><img src="./assets/images/icon-github.png" alt="Accès au repository Github">Back-end</a>
+                    </div>
+                </div>
             </div>
-            <div>Infinite Quiz</div>
-        </section>
-
-        <section id="contact">
-            <h3>Contact</h3>
-
-            <form action="">
-                <label for="">Nom</label>
-                <input type="text" name="" id="">
-                <label for="">Prénom</label>
-                <input type="text" name="" id="">
-                <label for="">Adresse Email</label>
-                <input type="email" name="" id="">
-                <label for="">N° de téléphone</label>
-                <input type="tel" name="" id="">
-                <label for="">Message</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
         </section>
     </main>
 
-    <footer>
-        <div>linkedin</div>
-        <div>GitHub</div>
+    <footer id="footer" class="footer">
+        <strong>Fadime Ilhan</strong>
+        <div class="footer__contact">
+        <a href="mailto:fadime.ilhan5703@gmail.com"><img src="./assets/images/email.png" alt="Email"></a>
+        <a href="https://www.linkedin.com/in/fadime-ilhan/" target="_blank"><img src="./assets/images/linkedin.png" alt="Logo LinkedIn"></a>
+        <a href="https://github.com/FadimeZgj" target="_blank"><img src="./assets/images/github.png" alt="Github"></a>
+    </div>
 
-        <ul>
-            <li>Mentions Légales</li>
-            <li>Politique de confidentialité</li>
-        </ul>
-
-        <p>&copy; Copyright
+        <p>Copyright &copy; 
             <script>document.write(new Date().getFullYear());</script> -
-            <strong>Fadime Ilhan</strong>
+            
             - Tous droits réservés
         </p>
     </footer>

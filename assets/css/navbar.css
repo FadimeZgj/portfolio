@@ -10,6 +10,7 @@
   padding: 1em 5em;
   background: transparent;
   transition: background 0.3s ease-in-out;
+  z-index: 1000;
   /* Nouveau conteneur interne avec espace entre les éléments */
 }
 .navbar.scrolled {
