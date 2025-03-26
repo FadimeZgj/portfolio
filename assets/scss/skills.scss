@@ -29,3 +29,21 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+
+    .skills__title {
+        font-size: 2rem !important;
+    }
+
+    .skills__technos {
+        max-width: 100%;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+
+        .skills__technos--list {
+            flex-direction: column;
+        }
+    }
+    
+}
+

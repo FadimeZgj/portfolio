@@ -87,4 +87,17 @@
   width: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+  .projects__title {
+    font-size: 2rem !important;
+  }
+  .projects__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects__list .projects__list--card {
+    width: 80% !important;
+  }
+}
+
 /*# sourceMappingURL=projects.css.map */

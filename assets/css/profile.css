@@ -70,5 +70,17 @@
     transform: scale(1);
   }
 }
+@media only screen and (max-width: 768px) {
+  .profil {
+    max-width: 100%;
+  }
+  .profil .profil_title {
+    font-size: 2rem !important;
+  }
+  .profil .describe {
+    flex-direction: column;
+    max-width: 90%;
+  }
+}
 
 /*# sourceMappingURL=profile.css.map */

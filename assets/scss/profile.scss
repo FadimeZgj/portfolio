@@ -81,3 +81,19 @@
           transform: scale(1);
         }
       }
+
+      @media only screen and (max-width: 768px) {
+
+        .profil {
+          max-width: 100%;
+          .profil_title {
+          font-size: 2rem !important;
+        }
+
+        .describe {
+          flex-direction: column;
+          max-width: 90%;
+        }
+        }
+        
+      }

@@ -1,3 +1,8 @@
+
+document.querySelector('.navbar__toggle').addEventListener('click', function () {
+  document.querySelector('.navbar__menu').classList.toggle('active');
+});
+
 /* TYPING */
 // Get the elements for name and job titles
 const nameElement = document.querySelector('.home__title--name');

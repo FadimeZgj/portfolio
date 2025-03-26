@@ -29,10 +29,15 @@
     <header>
         <nav class="navbar">
             <div class="navbar__container">
-                <div>
-                    <img class="navbar__logo" src="assets/images/logo.png" alt="">
+                <div class="navbar__logo-container">
+                    <img class="navbar__logo" src="assets/images/logo.png" alt="Logo">
                 </div>
-                <div>
+                <button class="navbar__toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar__menu">
                     <ul>
                         <li><a href="#" class="navbar__link">Accueil</a></li>
                         <li><a href="#profil" class="navbar__link">Profil</a></li>
@@ -156,7 +161,7 @@
             <h3 class="projects__title">Mes Projets</h3>
 
             <div class="projects__list">
-                <div class="projects__list--card">
+                <div class="projects__list--card" id="project-alertmns">
                     <img src="./assets/images/alertMNS/AlertMNS-login.png" alt="Page d'accueil Alert MNS">
                     <h4>Alert MNS</h4>
                     <h5>Application de mesagerie</h5>
@@ -181,7 +186,7 @@
                             <li><span>Gestion du code source :</span> Versioning avec Git</li>
                         </ul>
                     </div>
-                    <div class="project__list--card-link">
+                    <div class="project__list--card-link" id="project-infinite-quiz">
                         <!-- <a href=""><img src="./assets/images/icon-page.png" alt=""></a> -->
                         <a href="https://github.com/FadimeZgj/AlertMNS/tree/main" target="_blank"><img src="./assets/images/icon-github.png" alt="Accès au repository GitHub"></a>
                     </div>
