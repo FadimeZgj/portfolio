@@ -1,7 +1,35 @@
 
-document.querySelector('.navbar__toggle').addEventListener('click', function () {
-  document.querySelector('.navbar__menu').classList.toggle('active');
+// Gestion navbar en responsive
+const toggleButton = document.querySelector('.navbar__toggle');
+const menu = document.querySelector('.navbar__menu');
+const menuLinks = document.querySelectorAll('.navbar__menu a');
+
+// Ouvre/Ferme le menu au clic sur le bouton
+toggleButton.addEventListener('click', function (event) {
+  event.stopPropagation(); // Empêche la propagation du clic
+  menu.classList.toggle('active');
 });
+
+// Ferme le menu lorsqu'un lien est cliqué
+menuLinks.forEach(link => {
+  link.addEventListener('click', function () {
+    menu.classList.remove('active');
+  });
+});
+
+// Ferme le menu en cliquant à l'extérieur
+document.addEventListener('click', function (event) {
+  if (!menu.contains(event.target) && !toggleButton.contains(event.target)) {
+    menu.classList.remove('active');
+  }
+});
+
+// en responsive, faire disparêtre la flèche vers le bas
+
+if (window.innerWidth <= 768) {
+  document.getElementById("scrollArrow").style.display = "none";
+}
+
 
 /* TYPING */
 // Get the elements for name and job titles
